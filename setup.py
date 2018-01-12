@@ -20,7 +20,7 @@ setup(
 	author 				= __author__,
 	author_email 		= 'devreap1@gmail.com',
 	packages 			= packages,
-	url 				= '',
+	url 				= 'https://github.com/BuildAndDestroy/ethplorer_io',
 	license 			= open('LICENSE').read(),
 	install_requires 	= ['prettytable'],
 	entry_points 		= {'console_scripts': commands},
