@@ -129,6 +129,9 @@ def main():
             args.command, args.address, args.formatted, args.token)
         lists_of_dictionaries = filter_api_call(
             ethplorer_api.simple_api_call())
+        if lists_of_dictionaries[0][0] == 'No data found!':
+            print lists_of_dictionaries[1][0]['error']
+            return
         tokens_key_value = bypass_tokens_key(lists_of_dictionaries[2][0])
         token_details = token_info_details(tokens_key_value[1])
 
